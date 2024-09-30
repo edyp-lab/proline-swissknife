@@ -1,0 +1,26 @@
+<configuration>
+ <contextName>Proline Extractions Application</contextName>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <!-- encoders are assigned the type
+         ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+    <encoder>
+       <pattern>%-5level: [%thread] +%-4relative ms %date{dd MMM - HH:mm:ss} %logger{0} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+ <appender name="Fappender" class="ch.qos.logback.core.FileAppender">
+   <file>proline_extractions.log</file>
+   <append>true</append>
+   <encoder>
+     <pattern>%-5level: [%thread] %date{dd MMM - HH:mm:ss} %logger{0} - %msg%n</pattern>
+   </encoder>
+  </appender>
+  
+  <logger name="fr.edyp" level="DEBUG">
+  </logger>
+
+  <root level="OFF">
+    <appender-ref ref="STDOUT" />   
+  </root>
+  
+</configuration>

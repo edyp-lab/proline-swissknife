@@ -1,0 +1,1 @@
+java -cp "lib/*;proline-extraction-${pom.version}.jar;config" -Xmx1g fr.edyp.proline.extraction.Main %*

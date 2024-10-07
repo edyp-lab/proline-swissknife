@@ -20,7 +20,8 @@
   </logger>
 
   <root level="OFF">
-    <appender-ref ref="STDOUT" />   
+    <appender-ref ref="STDOUT" />
+    <appender-ref ref="Fappender" />
   </root>
   
 </configuration>

@@ -14,7 +14,6 @@
         <include>README*</include>
         <include>LICENSE*</include>
         <include>NOTICE*</include>
-        
       </includes>
     </fileSet>
 
@@ -31,6 +30,7 @@
         <include>*.jar</include>
         <include>*.exe</include>
         <include>*.xml</include>
+        <include>*.properties</include>
       </includes>
       <outputDirectory>/</outputDirectory>
     </fileSet>

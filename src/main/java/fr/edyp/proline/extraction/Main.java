@@ -28,6 +28,10 @@ public class Main {
     try {
       jc.parse(args);
       String parsedCommandStr = jc.getParsedCommand();
+      if (parsedCommandStr == null) {
+        jc.usage();
+        System.exit(1);
+      }
 
       switch (parsedCommandStr) {
         case "fwhm":
